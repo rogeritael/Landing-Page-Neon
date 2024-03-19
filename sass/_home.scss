@@ -100,6 +100,10 @@
 .s-card-neon {
     padding-top: 12.9rem;
 
+    .container {
+        @include flex(row, flex-start, space-between)
+    }
+
     .left-area {
         width: 100%;
         max-width: 27.7rem;
@@ -171,6 +175,118 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .right-area {
+        width: 100%;
+        max-width: 80rem;
+        
+        .main-text {
+            margin-bottom: 14.4rem;
+
+            h2 {
+                max-width: 48.8rem;
+                color: $gray-600;
+                margin-bottom: 4.9rem;
+            }
+    
+            ul {
+                margin-bottom: 3.2rem;
+    
+                li {
+                    border-bottom: 1px solid rgba(225, 224, 231, 0.9);
+                    padding: 3.3rem 0;
+                    @include flex(row, center, space-between);
+    
+                    &:first-child {
+                        padding-top: 0;
+                    }
+    
+                    .info {
+                        display: flex;
+                        align-items: center;
+    
+                        .txt {
+                            margin-left: 4.3rem;
+    
+                            h3 {
+                                color: $gray-400;
+                            }
+    
+                            p {
+                                font-size: 1.8rem;
+                                line-height: 150%;
+                                color: #7A7786;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .btn {
+                display: inline-block;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 112%;
+                letter-spacing: -0.5px;
+                color: $brand-blue;
+                position: relative;
+    
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: calc((-10px) + (-8px));
+                    bottom: 0;
+                    width: 10px;
+                    height: 3px;
+                    background-color: $brand-yellow;
+                }
+            }
+        }
+
+        .box-card {
+            width: 100%;
+            height: 41rem;
+            background: url('../img/bg-box-card-neon.svg') no-repeat center center; 
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 5.9rem;
+            .text {
+                width: 100%;
+                max-width: 38rem;
+
+                h2 {
+                    color: #fff;
+                    margin-bottom: 1.1rem;
+                }
+
+                h3 {
+                    color: #fff;
+                    max-width: 32.7rem;
+                    margin-bottom: 0.8rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    color: #fff;
+                    margin-bottom: 3.1rem;
+                }
+
+                .btns {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.6rem;
+                }
+            }
+
+            .image {
+                margin-right: -3.1rem;
             }
         }
     }
