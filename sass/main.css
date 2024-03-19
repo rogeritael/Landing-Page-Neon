@@ -267,4 +267,67 @@ header nav ul li a:hover {
   bottom: 4.6rem;
   right: 8.6rem;
   z-index: 1;
+}
+
+.s-card-neon {
+  padding-top: 12.9rem;
+}
+.s-card-neon .left-area {
+  width: 100%;
+  max-width: 27.7rem;
+}
+.s-card-neon .left-area .ilustra-mockup {
+  width: 100%;
+  max-width: 27.7rem;
+  position: relative;
+  margin-bottom: 12.9rem;
+}
+.s-card-neon .left-area .ilustra-mockup .circle {
+  position: absolute;
+  z-index: -1;
+  top: 8.7rem;
+  max-width: 37.7rem;
+  left: -21.4rem;
+}
+.s-card-neon .left-area .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s-card-neon .left-area .text .icon {
+  position: relative;
+}
+.s-card-neon .left-area .text .icon:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 83px;
+  top: -104px;
+  left: 50%;
+  margin-left: -2.5px;
+  background: url("../img//points.svg");
+}
+.s-card-neon .left-area .text .info-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s-card-neon .left-area .text .info-txt h3, .s-card-neon .left-area .text .info-txt p {
+  text-align: center;
+}
+.s-card-neon .left-area .text .info-txt h3 {
+  margin-top: 3.6rem;
+  color: #33303E;
+}
+.s-card-neon .left-area .text .info-txt p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5F5C68;
+  opacity: 0.8;
+  margin-bottom: 2.6rem;
+}
+.s-card-neon .left-area .text .info-txt ul li:not(:last-child) {
+  margin-bottom: 2.6rem;
 }/*# sourceMappingURL=main.css.map */
