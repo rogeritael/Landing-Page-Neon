@@ -291,3 +291,28 @@
         }
     }
 }
+
+.s-depoimentos {
+    padding-top: 13.4rem;
+    .top {
+        margin-bottom: 4rem;
+
+        h2 {
+            span {
+                display: block; //joga o próximo texto para baixo
+                color: $gray-200;
+                margin-bottom: 1.4rem;
+            }
+        }
+    }
+
+    .slide-depoimentos {
+        overflow: hidden;
+        position: relative;
+        height: fit-content;
+
+        .swiper-button-next, .swiper-button-prev {
+            color: $brand-blue;
+        }
+    }
+}

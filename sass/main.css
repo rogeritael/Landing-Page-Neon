@@ -71,7 +71,7 @@ h1, h2, h3, h4 {
   color: #4E4B59;
 }
 
-.card_depoimento {
+.card-depoimento {
   width: 100%;
   max-width: 38.4rem;
   height: 209px;
@@ -79,14 +79,14 @@ h1, h2, h3, h4 {
   border-radius: 8px;
   padding: 3.7rem 3.2rem 2.3rem 3.2rem;
 }
-.card_depoimento .user {
+.card-depoimento .user {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2.1rem;
 }
-.card_depoimento .user strong {
+.card-depoimento .user strong {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
@@ -94,7 +94,7 @@ h1, h2, h3, h4 {
   letter-spacing: -1px;
   color: #4E4B59;
 }
-.card_depoimento p {
+.card-depoimento p {
   font-size: 1.8rem;
   line-height: 150%;
   color: #5F5C68;
@@ -433,4 +433,25 @@ header nav ul li a:hover {
 }
 .s-card-neon .right-area .box-card .image {
   margin-right: -3.1rem;
+}
+
+.s-depoimentos {
+  padding-top: 13.4rem;
+}
+.s-depoimentos .top {
+  margin-bottom: 4rem;
+}
+.s-depoimentos .top h2 span {
+  display: block;
+  color: #C6C5CE;
+  margin-bottom: 1.4rem;
+}
+.s-depoimentos .slide-depoimentos {
+  overflow: hidden;
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.s-depoimentos .slide-depoimentos .swiper-button-next, .s-depoimentos .slide-depoimentos .swiper-button-prev {
+  color: #0073CE;
 }/*# sourceMappingURL=main.css.map */
