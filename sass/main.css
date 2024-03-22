@@ -826,8 +826,9 @@ footer .msg p {
     flex-direction: column;
     padding-top: 4.3rem;
     margin-bottom: 4rem;
+    padding-left: 0;
   }
-  .s-card-neon .right-area .image {
+  .s-card-neon .right-area .box-card .image {
     margin-right: 0;
   }
   .s-card-neon .right-area .text {
@@ -836,6 +837,79 @@ footer .msg p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .s-card-neon {
+    padding-top: 8.6rem;
+    position: relative;
+  }
+  .s-card-neon::after {
+    content: "";
+    width: 100%;
+    height: 21.4rem;
+    background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  .s-card-neon .right-area {
+    margin-bottom: 6.7rem;
+  }
+  .s-card-neon .right-area .main-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 3.7rem;
+  }
+  .s-card-neon .right-area .main-text ul li {
+    padding: 2.8rem 0;
+  }
+  .s-card-neon .right-area .main-text ul li .info {
+    align-items: flex-start;
+  }
+  .s-card-neon .right-area .main-text ul li .info .txt {
+    max-width: 71%;
+  }
+  .s-card-neon .right-area .main-text ul li .info .txt h3 {
+    font-size: 2rem;
+  }
+  .s-card-neon .right-area .main-text ul li .info .txt p {
+    font-size: 1.4rem;
+  }
+  .s-card-neon .right-area .box-card h2 {
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+  .s-card-neon .right-area .box-card h3 {
+    font-size: 2rem;
+  }
+  .s-card-neon .right-area .box-card .image {
+    max-width: 27.7rem;
+  }
+  .s-card-neon .right-area .box-card .text p {
+    max-width: 25.3rem;
+    margin-bottom: 3.4rem;
+    text-align: center;
+  }
+  .s-card-neon .right-area .box-card .text h3 {
+    text-align: center;
+  }
+  .s-card-neon .right-area .box-card .text .btns .btn-primary {
+    padding: 0 3rem;
+  }
+  .s-card-neon .left-area {
+    flex-direction: column-reverse;
+  }
+  .s-card-neon .left-area .ilustra-mockup {
+    height: 39.7rem;
+    overflow: hidden;
+  }
+  .s-card-neon .left-area .text {
+    margin-bottom: 4rem;
+  }
+  .s-card-neon .left-area .text .icon::before {
+    display: none;
   }
 }
 

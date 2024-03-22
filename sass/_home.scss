@@ -570,9 +570,10 @@
                 flex-direction: column;
                 padding-top: 4.3rem;
                 margin-bottom: 4rem;
-            }
-            .image {
-                margin-right: 0;
+                padding-left: 0;
+                .image {
+                    margin-right: 0;
+                }
             }
             .text {
                 max-width: 90%;
@@ -581,6 +582,104 @@
                 align-items: center;
                 margin-bottom: 3rem;
             }
+        }
+    }
+
+    @include responsive(480px){
+        padding-top: 8.6rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 21.4rem;
+            background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            transform: matrix(1,0,0,-1,0,0);
+        }
+
+        .right-area {
+            margin-bottom: 6.7rem;
+            .main-text {
+                h2 {
+                    font-size: 2.8rem;
+                    margin-bottom: 3.7rem;
+                }
+
+                ul {
+                    li {
+                        padding: 2.8rem 0;
+                        .info {
+                            align-items: flex-start;
+                            .txt {
+                                max-width: 71%;
+                                h3 {
+                                    font-size: 2rem;
+                                }
+
+                                p {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-card {
+                h2 {
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+
+                }
+
+                .image {
+                    max-width: 27.7rem;
+                }
+
+                .text {
+                    p {
+                        max-width: 25.3rem;
+                        margin-bottom: 3.4rem;
+                        text-align: center;
+                    }
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    .btns {
+                        .btn-primary {
+                            padding: 0 3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .left-area {
+            flex-direction: column-reverse;
+
+            .ilustra-mockup {
+                height: 39.7rem;
+                overflow: hidden;
+            }
+            .text {
+                margin-bottom: 4rem;
+                .icon {
+                    &::before {
+                        display: none;   
+                    }
+                }
+            }
+
         }
     }
 }
