@@ -119,6 +119,11 @@ h1, h2, h3, h4 {
   line-height: 150%;
   color: #5F5C68;
 }
+@media (max-width: 480px) {
+  .card-depoimento {
+    height: 25.3rem;
+  }
+}
 
 .btn-primary {
   background-color: #FFC800;
@@ -932,6 +937,40 @@ footer .msg p {
 }
 .s-depoimentos .slide-depoimentos .swiper-button-next, .s-depoimentos .slide-depoimentos .swiper-button-prev {
   color: #0073CE;
+}
+@media (max-width: 991px) {
+  .s-depoimentos .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .s-depoimentos .top h2 {
+    margin-bottom: 5.1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .s-depoimentos {
+    padding-top: 7.6rem;
+  }
+  .s-depoimentos .container {
+    padding: 0;
+  }
+  .s-depoimentos .slide-depoimentos {
+    padding: 0 2rem;
+  }
+  .s-depoimentos .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+  .s-depoimentos .top h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    max-width: 28.5rem;
+  }
+  .s-depoimentos .top h2 span {
+    margin-bottom: 1.1rem;
+  }
 }
 
 .s-conta-digital {

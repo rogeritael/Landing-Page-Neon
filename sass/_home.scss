@@ -707,6 +707,43 @@
             color: $brand-blue;
         }
     }
+
+    @include responsive(991px){
+        .top {
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                margin-bottom: 5.1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    @include responsive(480px){
+        padding-top: 7.6rem;
+
+        .container {
+            padding: 0;
+        }
+
+        .slide-depoimentos {
+            padding: 0 2rem;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.4rem;
+            h2 {
+                font-size: 2.8rem;
+                font-weight: 600;
+                max-width: 28.5rem;
+                span {
+                    margin-bottom: 1.1rem;
+                }
+            }
+        }
+    }
 }
 
 .s-conta-digital {
