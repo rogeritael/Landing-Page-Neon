@@ -349,6 +349,90 @@ footer .msg p {
   color: #fff;
   opacity: 0.8;
 }
+@media (max-width: 1050px) {
+  footer .main nav {
+    max-width: 76rem;
+  }
+}
+@media (max-width: 991px) {
+  footer .main {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+  }
+  footer .main nav {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 3.6rem;
+  }
+  footer .main nav .item {
+    width: 33%;
+    margin-bottom: 5rem;
+  }
+  footer .main .btns {
+    position: absolute;
+    right: 0;
+    bottom: 14rem;
+  }
+  footer .msg {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .msg p {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  footer .main {
+    margin-bottom: 3rem;
+  }
+  footer .main .btns {
+    max-width: 25rem;
+  }
+  footer .main .btns button img {
+    display: none;
+  }
+  footer .main .btns button .info {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  footer .top {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4.3rem;
+  }
+  footer .top .share {
+    flex-direction: column;
+    margin-top: -3rem;
+  }
+  footer .top .share ul {
+    margin-left: 0;
+    margin-top: -2rem;
+  }
+  footer .main nav .item {
+    width: 50%;
+    margin-bottom: 5.3rem;
+  }
+  footer .main .btns {
+    bottom: 0;
+    position: relative;
+    max-width: 100%;
+  }
+  footer .main .btns button {
+    padding-left: 0;
+    justify-content: center;
+  }
+  footer .main .btns button .info strong,
+  footer .main .btns button .info span {
+    display: block;
+    text-align: center;
+  }
+}
 
 .s-hero {
   width: 100%;
