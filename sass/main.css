@@ -520,12 +520,14 @@ footer .msg p {
   left: 0;
   z-index: 2;
   max-width: 43.5rem;
+  animation: floating 6s infinite;
 }
 .s-hero .area-image .image .card-back {
   bottom: 4.6rem;
   right: 8.6rem;
   z-index: 1;
   max-width: 35.2rem;
+  animation: floating 8s infinite;
 }
 @media (max-width: 1440px) {
   .s-hero .area-image {
@@ -1228,5 +1230,17 @@ footer .msg p {
     left: initial;
     top: 0;
     right: 0;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=main.css.map */
